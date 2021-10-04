@@ -2,92 +2,383 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <link rel="icon" type="image/svg+xml" href="/src/assets/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kolesa-Upgrade-FE</title>
     <link rel="stylesheet" href="/src/css/style.css">
-
 </head>
 
 <body>
-    <div id="app"></div>
-    <div class="modal">
-        <div class="modal-wrapper">
-            <div class="modal__img">
-                <div class="modal__img-top">
-                    <img src="/image/sweatshirt.png" alt="sweatshirt">
-                </div>
-                <div class="modal__img-bot">
-                    <img src="/image/beige-sweatshirt.png" alt="beige-sweatshirt">
-                    <img class="active" src="/image/blue-sweatshirt.png" alt="blue-sweatshirt">
-                    <img src="/image/grey-sweatshirt.png" alt="grey-sweatshirt">
+    <div class="wrapper">
+        <div class="content-wrapper">
+            <div class="container">
+                <header class="header">
+                    <div class="header__left">
+                        <div class="header__left-logo">
+                            <img src="/src/image/logo-kolesa.svg" alt="logo-kolesa">
+                        </div>
+                        <div class="search">
+                            <input type="text" class="search__input" placeholder="Поиск">
+                            <button class="search__button">
+                                <img src="/src/image/icon-search.svg" alt="icon-search">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <a href="#" class="accaunt">
+                            <span class="accaunt__img-wrapper">
+                                <img class="accaunt__img" src="/src/image/pictures-user.svg" alt="pictures-user">
+                            </span>
+                            <span class="accaunt__desc-wrapper">
+                                <span class="accaunt__desc-name">Мортиджан</span>
+                                <span class="accaunt__desc-specs">300 баллов</span>
+                            </span>
+                        </a>
+                    </div>
+                </header>
+
+                <div class="main">
+
+                    <div class="menu">
+                        <ul class="menu__list">
+                            <li>
+                                <a class="menu__group" href="#">Оргсхема</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Kolesa Team</a>
+                            </li>
+                            <li>
+                                <a class="menu__group  active" href="#">Kolesa Shop</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Картина компании</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Новости</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Education</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Guidelines</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">Библиотека</a>
+                            </li>
+                            <li>
+                                <a class="menu__group" href="#">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="content">
+
+                        <div>
+                            <img src="/src/image/baner-summer-sale.jpg" alt="baner-summer-sale">
+                        </div>
+
+                        <div class="frame row">
+                            <div class="col-4">
+                                <a href="#" class="frame__left">
+                                    <img src="/src/image/icon-plus.svg" alt="icon-plus">
+                                    <span class="frame__left-text">Получить баллы</span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="frame__center">
+                                    <img src="/src/image/icon-question.svg" alt="icon-question">
+                                    <span class="frame__center-text">Как получить баллы</span>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#" class="frame__right ">
+                                    <img src="/src/image/icon-gif.svg" alt="icon-gif">
+                                    <span class="frame__right-text">Подарить баллы</span>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="filter">
+                                    <button class="filter__button filter__button-active" type="button">Все
+                                        товары</button>
+                                    <button class="filter__button" type="button">Одежда</button>
+                                    <button class="filter__button" type="button">Акксесуары</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__catalog row">
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <span class="product__icon-new">NEW</span>
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <span class="product__icon-new">NEW</span>
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__catalog row">
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__catalog row">
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product__catalog row">
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="product">
+                                    <div class="product__img-wrapper">
+                                        <a href="#" class="product__img-link">
+                                            <img src="/src/image/t-shirt.jpg" alt="t-shirt">
+                                        </a>
+                                    </div>
+                                    <div class="product__desc">
+                                        <p class="product__desc-scores">220 баллов</p>
+                                        <p class="product__desc-title">
+                                            <a class="product__desc-link" href="#">
+                                                Футболка "Эволюционируй или много текста много текста
+                                            </a>
+                                        </p>
+                                        <p class="product__desc-size">Размеры S/M/L </p>
+                                        <button class="product__desc-button" type="button">Заказать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal__desc">
-                <h2 class="modal__desc-title">Футболка "Эволюционируй или сдохни"</h2>
-                <p class="modal__desc-specs">100 баллов</p>
-                <form action="#" class="form">
-                    <button class="form__button">Заказать</button>
-                    <p class="form__subtitle">Цвета:</p>
-
-                    <div>
-                        <label for="colors-blue" class="colors__radio">
-                            <input type="radio" name="colors" value="blue" id="colors-blue" checked>
-                            <span class="colors__blue">Синий</span>
-                        </label>
-                        <label for="colors-beige" class="colors__radio">
-                            <input type="radio" name="colors" value="blue" id="colors-beige">
-                            <span class="colors__beige">Бежевый</span>
-                        </label>
-                        <label for="colors-grey" class="colors__radio">
-                            <input type="radio" name="colors" value="blue" id="colors-grey">
-                            <span class="colors__grey">Серый</span>
-                        </label>
-                    </div>
-
-                    <p class="form__subtitle">Размер:</p>
-
-                    <div>
-                        <label for="size-s" class="size__radio">
-                            <input type="radio" name="size" value="s" id="size-s" checked>
-                            <span class="size-s">S</span>
-                        </label>
-                        <label for="size-m" class="size__radio">
-                            <input type="radio" name="size" value="m" id="size-m">
-                            <span class="size-m">M</span>
-                        </label>
-                        <label for="size-l" class="size__radio">
-                            <input type="radio" name="size" value="l" id="size-l">
-                            <span class="size-l">L</span>
-                        </label>
-                    </div>
-                    <p class="form__subtitle"><strong>Детали:</strong></p>
-                    <p class="details_info">Брендированная толстовка от Qazaq Republic. Материал: Хлопок 80%,Вискоза 20%
-                    </p>
-                    <p class="form__subtitle"><strong>Как выбрать размер:</strong></p>
-                    <p>Написать дяде Рику для уточнения.</p>
-
-                </form>
-                <div class="balans">
-                    <div class="balans__desc">
-                        <p class="balans__title">Твой баланс:</p>
-                        <span class="balans__spec">3 945 баллов</span>
-                    </div>
-                    <div class="balans__img">
-                        <img src="/image/bags.png" alt="bags">
-                    </div>
-                </div>
-            </div>
-            <span class="icon-close">
-                <img src="/image/icon-close.svg" alt="icon-close">
-            </span>
         </div>
-        <!--modal-wrapper-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__about-block">
 
+                    <div class="footer__social-network">
+                        <p class="copyright__kolesa-group">© Kolesa Group</p>
+                        <div>
+                            <a href="#"><img class="icon-insta" src="/src/image/icon-insta.svg" alt="icon-insta"></a>
+                            <a href="#"><img class="icon-youtube" src="/src/image/icon-youtube.svg" alt="icon-youtube"></a>
+                            <a href="#"><img class="icon-vk" src="/src/image/icon-vk.svg" alt="icon-vk"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer__towrite">
+                        <p class="footer__towrite-text">
+                            Есть идеи что улучшить?<br>
+                            Не знаешь, с кем решить проблему?
+                        </p>
+                        <button type="button" class="footer__towrite-button">Написать</button>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <!--modal-->
-    <script type="module" src="/src/js/main.js"></script>
 </body>
 
 </html>
