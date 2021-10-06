@@ -1,0 +1,83 @@
+.product {
+    cursor: pointer;
+    margin-bottom: -4rem;
+    z-index: 1;
+    position: relative;
+
+    &__catalog {
+        margin-bottom: 17.2rem;
+    }
+
+    &__img-wrapper {
+        position: relative;
+    }
+
+    &__icon-new {
+        background: $color-icon-new;
+        padding: 0 0.4rem;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        position: absolute;
+        left: 1.6rem;
+        bottom: 1.6rem;
+        color: $color-white;
+        border-radius: 0.4rem;
+    }
+
+    &__desc {
+        padding: 1.6rem;
+
+        &-scores {
+            font-weight: 600;
+            font-size: 2.4rem;
+            line-height: 3.6rem;
+            color: $color-blue;
+        }
+
+        &-link {
+            font-weight: 600;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            color: $color-regular;
+            width: 100%;
+            display: inline-block;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-right: 0.5rem;
+        }
+
+        &-size {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $color-modal-bg;
+            padding-bottom: 1.6rem;
+        }
+
+        &-button {
+            opacity: 0;
+            padding: 1rem;
+            cursor: pointer;
+            background: $color-blue;
+            width: 100%;
+            color: $color-white;
+            border: none;
+            border-radius: 0.3rem;
+        }
+    }
+
+    &:hover {
+        background: $color-white;
+        box-shadow: 0 0.2rem 1rem rgba(28, 24, 25, 0.1);
+        border-radius: 0.8rem;
+        z-index: 2;
+
+        .product__desc-button {
+            opacity: 1;
+        }
+
+        .product__desc-scores {
+            color: $color-scores;
+        }
+    }
+}
