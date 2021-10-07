@@ -1,0 +1,47 @@
+.footer {
+    flex: 0 0 auto;
+    background-color: $color-regular;
+    padding: 2rem 0;
+
+    &__about-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__towrite {
+        display: flex;
+        align-items: center;
+
+        &-text {
+            color: $color-white;
+            margin-right: 3rem;
+        }
+
+        &-button {
+            font-size: 1.4rem;
+            line-height: 2.4rem;
+            color: $color-blue;
+            border: none;
+            background: $color-white;
+            box-shadow: 0 0.2rem 0.4rem rgba(28, 24, 25, 0.1);
+            border-radius: 0.8rem;
+            padding: 0.8rem 4.4rem;
+        }
+    }
+
+    &__social {
+        &-copyright {
+            color: $color-white;
+            padding-bottom: 1.2rem;
+        }
+
+        &-insta {
+            padding-right: 1.4rem;
+            margin-top: 1.2rem;
+        }
+
+        &-youtube {
+            padding-right: 1.4rem;
+        }
+    }
+}
