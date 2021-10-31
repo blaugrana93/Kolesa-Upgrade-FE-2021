@@ -5,7 +5,7 @@
     <div class="wrapper">
         <div class="content-wrapper">
             <div class="container">
-                <Header />
+                <HeaderVue />
                 <div class="main">
 
                     <div class="menu">
@@ -42,6 +42,7 @@
 
                     <div class="content">
 
+                        <BannerVue />
                         <div>
                             <img src="/src/image/baner-summer-sale.jpg" alt="baner-summer-sale">
                         </div>
@@ -112,11 +113,14 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import HeaderVue from './components/Header.vue'
+import BannerVue from './components/Banner.vue'
+
 export default {
   name: 'App',
   components: {
-    Header
+    HeaderVue,
+    BannerVue
   }
 }
 </script>
