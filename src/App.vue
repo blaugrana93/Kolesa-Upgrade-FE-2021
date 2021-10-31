@@ -7,45 +7,9 @@
             <div class="container">
                 <HeaderVue />
                 <div class="main">
-
-                    <div class="menu">
-                        <ul class="menu__list">
-                            <li>
-                                <a class="menu__group" href="#">Оргсхема</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Kolesa Team</a>
-                            </li>
-                            <li>
-                                <a class="menu__group  menu__group-active" href="#">Kolesa Shop</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Картина компании</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Новости</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Education</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Guidelines</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">Библиотека</a>
-                            </li>
-                            <li>
-                                <a class="menu__group" href="#">FAQ</a>
-                            </li>
-                        </ul>
-                    </div>
-
+                    <MenuVue />
                     <div class="content">
-
                         <BannerVue />
-                        <div>
-                            <img src="/src/image/baner-summer-sale.jpg" alt="baner-summer-sale">
-                        </div>
 
                         <div class="frame row">
                             <div class="col-4">
@@ -114,12 +78,14 @@
 
 <script>
 import HeaderVue from './components/Header.vue'
+import MenuVue from './components/Menu.vue'
 import BannerVue from './components/Banner.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderVue,
+    MenuVue,
     BannerVue
   }
 }
