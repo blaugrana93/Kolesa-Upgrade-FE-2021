@@ -11,7 +11,11 @@
     margin-bottom: -4rem;
     z-index: 1;
     position: relative;
-
+    &__img-link{
+        img{
+            max-height: 33rem;
+        }
+    }
     &__catalog {
         margin-bottom: 17.2rem;
         .hide{

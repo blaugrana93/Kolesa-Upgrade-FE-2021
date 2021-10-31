@@ -8,14 +8,14 @@
       <div class="product" :data-id="card.id">
         <div class="product__img-wrapper">
           <span class="product__icon-new" v-if="card.isNew">NEW</span>
-          <a href="#" onclick="openmodal(${z})" class="product__img-link">
+          <a href="#" @click="openModal(card)" class="product__img-link">
             <img :src="card.mainImage" :alt="card.title" style="width: 330px" />
           </a>
         </div>
         <div class="product__desc">
           <p class="product__desc-scores">{{ card.price }}</p>
           <p class="product__desc-title">
-            <a onclick="openmodal(${z})" class="product__desc-link" href="#">
+            <a @click="openModal(card)" class="product__desc-link" href="#">
               {{ card.title }}
             </a>
           </p>
@@ -42,14 +42,14 @@
       <div class="product" :data-id="card.id">
         <div class="product__img-wrapper">
           <span class="product__icon-new" v-if="card.isNew">NEW</span>
-          <a href="#" onclick="openmodal(${z})" class="product__img-link">
+          <a href="#" @click="openModal(card)" class="product__img-link">
             <img :src="card.mainImage" :alt="card.title" style="width: 330px" />
           </a>
         </div>
         <div class="product__desc">
           <p class="product__desc-scores">{{ card.price }}</p>
           <p class="product__desc-title">
-            <a onclick="openmodal(${z})" class="product__desc-link" href="#">
+            <a @click="openModal(card)" class="product__desc-link" href="#">
               {{ card.title }}
             </a>
           </p>
@@ -76,14 +76,14 @@
       <div class="product" :data-id="card.id">
         <div class="product__img-wrapper">
           <span class="product__icon-new" v-if="card.isNew">NEW</span>
-          <a href="#" onclick="openmodal(${z})" class="product__img-link">
+          <a href="#" @click="openModal(card)" class="product__img-link">
             <img :src="card.mainImage" :alt="card.title" style="width: 330px" />
           </a>
         </div>
         <div class="product__desc">
           <p class="product__desc-scores">{{ card.price }}</p>
           <p class="product__desc-title">
-            <a onclick="openmodal(${z})" class="product__desc-link" href="#">
+            <a @click="openModal(card)" class="product__desc-link" href="#">
               {{ card.title }}
             </a>
           </p>

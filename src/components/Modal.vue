@@ -4,27 +4,17 @@
       <div class="modal-bg">
         <div class="modal modal-bg__modal">
           <div class="pictures-info modal__pictures-info">
-            <div
-              class="pictures-info-primary pictures-info__pictures-info-primary"
-            >
+            <div class="pictures-info-primary pictures-info__pictures-info-primary">
               <img :src="this.card.mainImage" alt="" />
             </div>
-            <div
-              class="
-                pictures-info-secondary
-                pictures-info__pictures-info-secondary
-              "
-            >
+            <div class="pictures-info-secondary pictures-info__pictures-info-secondary">
               <div class="pictures-info-secondary__first">
-                <img
-                  :src="
+                <img :src="
                     getFormattedFirstImage(
                       this.card.images,
                       this.card.mainImage
                     )
-                  "
-                  alt="Secondary Photo"
-                />
+                  "  alt="Secondary Photo"/>
               </div>
               <div class="pictures-info-secondary__second">
                 <img
