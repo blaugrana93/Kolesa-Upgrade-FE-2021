@@ -6,7 +6,7 @@
       placeholder="Поиск"
       name="s"
       v-model="query"
-      @input="searchInputHandler"
+      @input="searchInput"
     />
     <button class="search__button">
       <img src="image/icon-search.svg" alt="icon-search" />
@@ -22,7 +22,7 @@ export default {
     };
   },
   methods: {
-    searchInputHandler() {
+    searchInput() {
       this.$emit("search", this.query);
     },
   },
