@@ -2,12 +2,12 @@
   <header class="header">
     <div class="header__left">
       <div class="header__left-logo">
-        <img src="/src/image/logo-kolesa.svg" alt="logo-kolesa" />
+        <img src="image/logo-kolesa.svg" alt="logo-kolesa" />
       </div>
       <div class="search">
         <input type="text" class="search__input" placeholder="Поиск" />
         <button class="search__button">
-          <img src="/src/image/icon-search.svg" alt="icon-search" />
+          <img src="image/icon-search.svg" alt="icon-search" />
         </button>
       </div>
     </div>
@@ -16,7 +16,7 @@
         <span class="accaunt__img-wrapper">
           <img
             class="accaunt__img"
-            src="/src/image/pictures-user.svg"
+            src="image/pictures-user.svg"
             alt="pictures-user"
           />
         </span>
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "header",
+  name: "Header",
 };
 </script>
 

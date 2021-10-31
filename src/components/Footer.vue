@@ -34,17 +34,17 @@ export default {
       socials: [
         {
           id: 1,
-          src: "image/icon-insta.svg",
+          src: "../image/icon-insta.svg",
           title: "Instagram",
         },
         {
           id: 2,
-          src: "image/icon-youtube.svg",
+          src: "../image/icon-youtube.svg",
           title: "Youtube",
         },
         {
           id: 3,
-          src: "image/icon-vk.svg",
+          src: "../image/icon-vk.svg",
           title: "Vkontakte",
         },
       ],

@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
     <div class="wrapper">
       <div class="content-wrapper">
         <div class="container">
@@ -13,14 +11,14 @@
               <div class="frame row">
                 <div class="col-4">
                   <a href="#" class="frame__left">
-                    <img src="/src/image/icon-plus.svg" alt="icon-plus" />
+                    <img src="image/icon-plus.svg" alt="icon-plus" />
                     <span class="frame__left-text">Получить баллы</span>
                   </a>
                 </div>
                 <div class="col-4">
                   <a href="#" class="frame__center">
                     <img
-                      src="/src/image/icon-question.svg"
+                      src="image/icon-question.svg"
                       alt="icon-question"
                     />
                     <span class="frame__center-text">Как получить баллы</span>
@@ -28,7 +26,7 @@
                 </div>
                 <div class="col-4">
                   <a href="#" class="frame__right">
-                    <img src="/src/image/icon-gif.svg" alt="icon-gif" />
+                    <img src="image/icon-gif.svg" alt="icon-gif" />
                     <span class="frame__right-text">Подарить баллы</span>
                   </a>
                 </div>
@@ -88,13 +86,6 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import 'src/scss/style';
 </style>

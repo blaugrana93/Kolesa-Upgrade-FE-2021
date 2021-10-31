@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="/src/image/baner-summer-sale.jpg" alt="baner-summer-sale" />
+    <img src="../image/baner-summer-sale.jpg" alt="baner-summer-salea" />
   </div>
 </template>
 

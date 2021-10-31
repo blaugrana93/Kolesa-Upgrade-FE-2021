@@ -1,12 +1,12 @@
 <template>
   <div class="menu">
     <ul class="menu__list">
-      <li v-for="item in menuItems" :key="item.id">
+      <li v-for="menu in menuList" :key="menu.id">
         <a
           class="menu__group"
           href="#"
-          :class="{ 'menu__group--active': item.isActive }"
-          >{{ item.title }}</a
+          :class="{ 'menu__group--active': menu.isActive }"
+          >{{ menu.title }}</a
         >
       </li>
     </ul>
@@ -18,7 +18,7 @@ export default {
   name: "Menu",
   data() {
     return {
-      menuItems: [
+      menuList: [
         {
           id: 1,
           title: "Оргсхема",
