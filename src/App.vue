@@ -70,10 +70,10 @@
 </template>
 
 <script>
-import HeaderVue from "./components/Header.vue";
-import MenuVue from "./components/Menu.vue";
-import BannerVue from "./components/Banner.vue";
-import FooterVue from "./components/Footer.vue";
+import HeaderVue from "@/components/Header.vue";
+import MenuVue from "@/components/Menu.vue";
+import BannerVue from "@/components/Banner.vue";
+import FooterVue from "@/components/Footer.vue";
 
 export default {
   name: "App",

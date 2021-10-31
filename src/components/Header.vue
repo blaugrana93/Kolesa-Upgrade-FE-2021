@@ -4,12 +4,7 @@
       <div class="header__left-logo">
         <img src="image/logo-kolesa.svg" alt="logo-kolesa" />
       </div>
-      <div class="search">
-        <input type="text" class="search__input" placeholder="Поиск" />
-        <button class="search__button">
-          <img src="image/icon-search.svg" alt="icon-search" />
-        </button>
-      </div>
+      <SearchVue />
     </div>
     <div class="header__right">
       <a href="#" class="accaunt">
@@ -30,8 +25,12 @@
 </template>
 
 <script>
+import SearchVue from '@/components/Search.vue';
 export default {
   name: "Header",
+  components: {
+    SearchVue,
+  },
 };
 </script>
 
