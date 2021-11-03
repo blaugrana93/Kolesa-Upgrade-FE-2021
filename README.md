@@ -1,4 +1,4 @@
-# vue-kolesa-upgrade
+# kolesa
 
 ## Project setup
 ```

@@ -1,0 +1,24 @@
+.search {
+    position: relative;
+
+    &__input {
+        padding-left: 5.6rem;
+        background: $color-search;
+        border: 0.1rem solid $color-search;
+        border-radius: 0.8rem;
+        width: 30.8rem;
+        height: 4.4rem;
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        outline: none;
+    }
+
+    &__button {
+        background: none;
+        border: none;
+        position: absolute;
+        left: 0;
+        padding: 1.4rem 2rem;
+        cursor: pointer;
+    }
+}
