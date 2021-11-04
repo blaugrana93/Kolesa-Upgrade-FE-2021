@@ -106,7 +106,7 @@
 </template>
 
 <script>
-import ModalVue from "@/components/Modal.vue";
+import ModalVue from "@/views/shop/components/Modal.vue";
 export default {
   name: "Product",
   props: {

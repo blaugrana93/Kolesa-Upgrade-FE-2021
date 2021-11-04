@@ -19,10 +19,9 @@
 
 <script>
 
-import HeaderVue from './components/Header.vue';
-import MenuVue from './components/Menu.vue';
-
-import FooterVue from './components/Footer.vue';
+import HeaderVue from '@/layouts/components/Header.vue';
+import MenuVue from '@/layouts/components/Menu.vue';
+import FooterVue from '@/layouts/components/Footer.vue';
 
 export default {
   name: "App",

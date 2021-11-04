@@ -21,10 +21,10 @@
 
 <script>
  import axios from '@/axios';
- import BannerVue from  './components/Banner.vue';
- import FrameVue from './components/Frame.vue';
- import ProductVue from  './components/Product.vue';
- import FilterVue from './components/Filter.vue';
+ import BannerVue from  '@/layouts/components/Banner.vue';
+ import FrameVue from '@/views/shop/components/Frame.vue';
+ import ProductVue from  '@/views/shop/components/Product.vue';
+ import FilterVue from '@/views/shop/components/Filter.vue';
 export default {
   name: "App",
   mounted() {
@@ -72,11 +72,8 @@ export default {
     },
   },
   components: {
-    HeaderVue,
-    MenuVue,
     BannerVue,
     FrameVue,
-    FooterVue,
     ProductVue,
     FilterVue,
   },
