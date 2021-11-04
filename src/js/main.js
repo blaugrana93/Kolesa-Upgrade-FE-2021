@@ -165,7 +165,7 @@ function openmodal(x) {
             imagesHtml += `<img src="/src/image/${imagesArray[i]}" alt="beige-sweatshirt"></img>`;
         }
         
-    };
+    }
     
     let colorsHtml ='';
     let colorsArray = all[x]['colors'];
@@ -186,7 +186,7 @@ function openmodal(x) {
             `;
         }
         
-    };
+    }
 
     
     let sizesHtml ='';
@@ -208,7 +208,7 @@ function openmodal(x) {
             `;
         }
         
-    };
+    }
 
     modalInside.innerHTML = `
     <div class="modal__img">
