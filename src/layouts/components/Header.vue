@@ -13,8 +13,8 @@
 </template>
 
 <script>
-import SearchVue from '@/components/Search.vue';
-import UserVue from '@/components/User.vue';
+import SearchVue from '@/layouts/components/Search.vue';
+import UserVue from '@/layouts/components/User.vue';
 export default {
   name: "Header",
   components: {

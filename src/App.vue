@@ -1,30 +1,14 @@
 <template>
   <div id="app">
     <div class="wrapper">
+      <router-view></router-view>
       <div class="content-wrapper">
         <div class="container">
           <HeaderVue />
           <div class="main">
             <MenuVue />
 
-            <div class="content">
-              <BannerVue />
-              <FrameVue />
-
-              <FilterVue
-                @showAllBtn="showAllBtn"
-                @showClothesBtn="showClothesBtn"
-                @showAccessesBtn="showAccessesBtn"
-              ></FilterVue>
-
-              <ProductVue
-                :clothes="clothesFromBE"
-                :accesses="accessesFromBE"
-                :selectedTab="selectedTab"
-                @orderFromCard="orderToUser"
-                :search="search"
-              ></ProductVue>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -34,14 +18,11 @@
 </template>
 
 <script>
-import axios from "@/axios";
-import HeaderVue from "@/components/Header.vue";
-import MenuVue from "@/components/Menu.vue";
-import BannerVue from "@/components/Banner.vue";
-import FrameVue from "@/components/Frame.vue";
-import FooterVue from "@/components/Footer.vue";
-import ProductVue from "@/components/Product.vue";
-import FilterVue from "@/components/Filter.vue";
+
+import HeaderVue from '@/layouts/components/Header.vue';
+import MenuVue from '@/layouts/components/Menu.vue';
+import FooterVue from '@/layouts/components/Footer.vue';
+
 export default {
   name: "App",
   mounted() {
@@ -54,20 +35,11 @@ export default {
   },
   data() {
     return {
-      isShowModal: false,
-      selectedTab: 0,
-      orderPrice: 0,
       search: "",
-      clothesFromBE: [],
-      accessesFromBE: [],
       userFromBE: {},
     };
   },
-  computed: {
-    allProducts() {
-      return { ...this.clothesFromBE, ...this.accessesFromBE };
-    },
-  },
+  
   methods: {
     showAllBtn() {
       this.selectedTab = 0;
@@ -91,11 +63,11 @@ export default {
   components: {
     HeaderVue,
     MenuVue,
-    BannerVue,
-    FrameVue,
+    //BannerVue,
+    //FrameVue,
     FooterVue,
-    ProductVue,
-    FilterVue,
+    //ProductVue,
+    //FilterVue,
   },
 };
 </script>
